@@ -1,0 +1,263 @@
+/* CSS Variables */
+:root {
+    --primary: #102a43;
+    --accent: #d4a017;
+    --background: #f4f6f9;
+    --text: #222222;
+    --white: #ffffff;
+}
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 110px;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 30px 6%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #102a43, #245b85);
+    color: var(--white);
+}
+
+#home h2 {
+    color: var(--white);
+    font-size: 32px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 11px 22px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* About Section */
+#about {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#about ul {
+    padding-left: 25px;
+}
+
+/* Match Schedule Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background-color: var(--white);
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #edf1f5;
+}
+
+tr:hover {
+    background-color: #fff2cc;
+}
+
+/* Team Filter */
+#team-filter {
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+/* Booking Section */
+#booking {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#booking h2 {
+    grid-column: 1 / -1;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+form label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid var(--accent);
+}
+
+/* Booking Summary Card */
+#booking article {
+    padding: 20px;
+    background-color: #edf1f5;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* My Bookings */
+#my-bookings {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Guidelines Cards */
+#guidelines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+#guidelines h2 {
+    grid-column: 1 / -1;
+}
+
+#guidelines article {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 140px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #booking {
+        grid-template-columns: 1fr;
+    }
+
+    #guidelines {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 20px 4%;
+    }
+}
