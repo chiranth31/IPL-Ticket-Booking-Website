@@ -261,3 +261,115 @@ footer {
         padding: 20px 4%;
     }
 }
+
+/* Activity 3 - Booking Form Styling */
+
+.booking-form {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h1 {
+    text-align: center;
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.booking-form p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.booking-form input:not([type="radio"]),
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booking-form fieldset {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form fieldset label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.booking-form button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #d4a017;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.booking-form button:hover {
+    background: #b8860b;
+}
+
+/* Booking Page Header */
+
+.booking-header {
+    background: #102a43;
+    color: white;
+    padding: 15px 30px;
+}
+
+.booking-header h2 {
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.booking-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.booking-header nav a:hover {
+    background: #d4a017;
+    color: #102a43;
+}
+
+/* Activity 3 - Checkbox Alignment */
+
+.booking-form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    font-weight: normal;
+}
+
+.booking-form fieldset input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}

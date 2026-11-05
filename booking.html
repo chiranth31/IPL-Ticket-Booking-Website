@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IPL Ticket Booking Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="booking-header">
+
+        <h2>IPL 2026 Ticket Booking</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+
+        <h1>IPL Ticket Booking Form</h1>
+
+        <p>Fill in your details to book your IPL match tickets.</p>
+
+
+        <form action="#" method="get">
+
+            <!-- 1. Full Name -->
+            <label for="name">Full Name:</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                minlength="3"
+                maxlength="50"
+                required
+            >
+
+
+            <!-- 2. Email Address -->
+            <label for="email">Email Address:</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+
+            <!-- 3. Phone Number -->
+            <label for="phone">Phone Number:</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10-digit mobile number"
+                pattern="[6-9][0-9]{9}"
+                minlength="10"
+                maxlength="10"
+                required
+                title="Enter a valid 10-digit Indian mobile number"
+            >
+
+
+            <!-- 4. Match Selection -->
+            <label for="match">Select Match:</label>
+
+            <select id="match" name="match" required>
+
+                <option value="">-- Select a Match --</option>
+
+                <option value="RCB vs CSK">RCB vs CSK</option>
+
+                <option value="RCB vs MI">RCB vs MI</option>
+
+                <option value="MI vs KKR">MI vs KKR</option>
+
+                <option value="CSK vs SRH">CSK vs SRH</option>
+
+            </select>
+
+
+            <!-- 5. Stand Category -->
+            <label for="stand">Select Stand Category:</label>
+
+            <select id="stand" name="stand" required>
+
+                <option value="">-- Select Stand --</option>
+
+                <option value="General">General</option>
+
+                <option value="Premium">Premium</option>
+
+                <option value="VIP">VIP</option>
+
+            </select>
+
+
+            <!-- 6. Number of Tickets -->
+            <label for="tickets">Number of Tickets:</label>
+
+            <input
+                type="number"
+                id="tickets"
+                name="tickets"
+                min="1"
+                max="10"
+                required
+            >
+
+
+            <!-- 7. Additional Booking Preferences -->
+            <fieldset>
+
+                <legend>Additional Booking Preferences</legend>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="preferences"
+                        value="Seats Together"
+                    >
+                    Seats Together
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="preferences"
+                        value="Wheelchair-Accessible Seating"
+                    >
+                    Wheelchair-Accessible Seating
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="preferences"
+                        value="Aisle Seat Preference"
+                    >
+                    Prefer a seat near the walkway (aisle)
+                </label>
+
+            </fieldset>
+
+
+            <!-- 8. Submit and Reset Buttons -->
+            <button type="submit">Submit Booking</button>
+
+            <button type="reset">Reset Form</button>
+
+
+        </form>
+
+    </section>
+
+
+</body>
+</html>
