@@ -373,3 +373,49 @@ footer {
     margin: 0;
     cursor: pointer;
 }
+
+/* Activity 5 - Toast Notification */
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 14px 20px;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadeIn 0.4s, fadeOut 0.4s 2.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        bottom: 0;
+    }
+
+    to {
+        opacity: 1;
+        bottom: 30px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
